@@ -1,0 +1,55 @@
+/* ==|====================
+   Module/Button
+   ======================= */
+
+// Style btn
+
+
+%labels{
+	width: 140px;
+	height: 50px;
+	text-align: center;
+	margin:0 auto;
+	font-family: $font-family--regular;
+	font-size: 14px;
+	line-height: 50px;
+}
+
+
+// Buttons btn__type--size --color
+.labels {
+
+
+	@include e(tables)  {
+
+
+		@include m(opened)  {
+
+			background:$green;
+			@extend %labels;
+		}
+
+		@include m(replied)  {
+
+			background:$yellow;
+			@extend %labels;
+		}
+
+
+		@include m(not-opened)  {
+
+			background:$red;
+			@extend %labels;
+		}
+
+
+
+
+	}
+
+
+}
+
+
+
+

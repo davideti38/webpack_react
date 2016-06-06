@@ -1,0 +1,35 @@
+
+
+
+%labels{
+	width: 140px;
+	height: 50px;
+	text-align: center;
+	margin:0 auto;
+	font-size: 14px;
+	line-height: 50px;
+}
+
+:local(.labelsIsOpened) {
+
+	background:$green;
+	@extend %labels;
+
+}
+
+:local(.labelsIsReplied) {
+
+	background:$yellow;
+	@extend %labels;
+
+}
+
+:local(.labelsIsNotOpened) {
+
+	background:$red;
+	@extend %labels;
+
+}
+
+
+

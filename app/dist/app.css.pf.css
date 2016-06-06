@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+/* Tools
+   ========================================================================== */
+
+/* ===========================
+   functions
+   =========================== */
+
+/* ===========================
+   Mixins
+   =========================== */
+
+/* Shared variables
+   ========================================================================== */
+
+/* ===========================
+   config : Global config
+   =========================== */
+
+/* ===========================
+   config : Global config
+   =========================== */
+
+/* ===========================
+   config : Global config
+   =========================== */
+
+@font-face {
+  font-family: "proximanova-black";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./dist/fonts/proximanova-black-webfont-bf54291.eot?#iefix) format("embedded-opentype"), url(./dist/fonts/proximanova-black-webfont-02339b1.woff2) format("woff2"), url(./dist/fonts/proximanova-black-webfont-ae79a43.woff) format("woff"), url(./dist/fonts/proximanova-black-webfont-6783c61.ttf) format("truetype"), url(./dist/fonts/proximanova-black-webfont-7fb4e46.svg#proximanova-black) format("svg");
+}
+
+@font-face {
+  font-family: "proximanova-bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./dist/fonts/proximanova-bold-webfont-4260bc7.eot?#iefix) format("embedded-opentype"), url(./dist/fonts/proximanova-bold-webfont-55a8200.woff2) format("woff2"), url(./dist/fonts/proximanova-bold-webfont-4e0349f.woff) format("woff"), url(./dist/fonts/proximanova-bold-webfont-52aeefd.ttf) format("truetype"), url(./dist/fonts/proximanova-bold-webfont-2c7b4c4.svg#proximanova-bold) format("svg");
+}
+
+@font-face {
+  font-family: "proximanova-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./dist/fonts/proximanova-regular-844b5eb.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "proximanova-light";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./dist/fonts/proximanova-light-webfont-19647ef.eot?#iefix) format("embedded-opentype"), url(./dist/fonts/proximanova-light-webfont-044b886.woff2) format("woff2"), url(./dist/fonts/proximanova-light-webfont-25b99e7.woff) format("woff"), url(./dist/fonts/proximanova-light-webfont-4a2c634.ttf) format("truetype"), url(./dist/fonts/proximanova-light-webfont-3fc5a9a.svg#proximanova-light) format("svg");
+}
+
+/* Rest and Base style
+   ========================================================================== */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ===========================
+   helpers
+   =========================== */
+
+.hidden {
+  display: none !important;
+}
+
+.fadeOut {
+  opacity: 0 !important;
+}
+
+.hidden-btn {
+  display: none;
+}
+
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.paused {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+  opacity: 1;
+}
+
+.center-align {
+  text-align: center !important;
+}
+
+.left-align {
+  text-align: left !important;
+}
+
+.right-align {
+  text-align: right !important;
+}
+
+.center {
+  display: block !important;
+  margin: 0 auto;
+}
+
+.center-inline {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Layout
+   ========================================================================== */
+
+/* ======================
+   Layout/Grid
+   ======================= */
+
+/* ======================
+   Layout/wrappers
+   ======================= */
+
+.wrapper__tabEmails {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* ===========================
+   extends -- Placeholder rules
+   Des règles de base qui s'appliquent à une catégorie d'élément
+   ex: titre, paragrphe, a etc.
+   ensuite il suffie de d'utiliser extends sur la classe
+   de l'élément.
+   si l'ont doit ajouter à l'élément ou ajoute un modifieur mais
+   on ne doit pas avoir à annuler des règles.
+   =========================== */
+
+.hdl__large {
+  font-family: "proximanova-bold", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.hdl__meduim {
+  font-family: "proximanova-regular", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.para__Italic,
+.para__meduim {
+  font-family: "proximanova-regular", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* ==|====================
+   Module/headlines
+
+   Ici on  applique les styte de base qui est réutilisable via
+   un extends.
+   ensuite si l'ont à besion de créer un style spécifique on
+   ajoute seulement un modifieur qui prend la class de base +
+   les styles qui sont en plus mais sans avoir à supprimer de styles.
+   -- dans cette exemple on applique une marge différente.
+   ======================= */
+
+.hdl__large {
+  color: #0b0b0b;
+}
+
+.hdl__meduim {
+  color: #333333;
+}
+
+/* ==|====================
+   Module/text
+
+   Ici on  applique les styte de base qui est réutilisable via
+   un extends.
+   ensuite si l'ont à besion de créer un style spécifique on
+   ajoute seulement un modifieur qui prend la class de base +
+   les styles qui sont en plus mais sans avoir à supprimer de styles.
+   -- dans cette exemple on applique une marge différente.
+   ======================= */
+
+.para__Italic {
+  color: #0b0b0b;
+  font-style: italic;
+}
+
+.para__meduim {
+  color: #333333;
+}/* Tools
+   ========================================================================== */
+
+/* ===========================
+   functions
+   =========================== */
+
+/* ===========================
+   Mixins
+   =========================== */
+
+/* Shared variables
+   ========================================================================== */
+
+/* ===========================
+   config : Global config
+   =========================== */
+
+/* ===========================
+   config : Global config
+   =========================== */
+
+._6pdv97abwSndnIa9GbEak,
+.ADygpF_GuIHxNB3g22ahm,
+._3oGjXufZsEpfhb0Zgif0Bn {
+  width: 140px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 50px;
+}
+
+._6pdv97abwSndnIa9GbEak {
+  background: #1cb097;
+}
+
+.ADygpF_GuIHxNB3g22ahm {
+  background: #cbc520;
+}
+
+._3oGjXufZsEpfhb0Zgif0Bn {
+  background: #cb2027;
+}

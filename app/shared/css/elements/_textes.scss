@@ -1,0 +1,35 @@
+/* ==|====================
+   Module/text
+
+   Ici on  applique les styte de base qui est réutilisable via
+   un extends.
+   ensuite si l'ont à besion de créer un style spécifique on
+   ajoute seulement un modifieur qui prend la class de base +
+   les styles qui sont en plus mais sans avoir à supprimer de styles.
+   -- dans cette exemple on applique une marge différente.
+   ======================= */
+
+.para {
+
+
+
+	@include e(Italic) {
+
+		color:$black;
+		font-style: italic;
+		@extend %para-meduim;
+
+
+	}
+
+	@include e(meduim) {
+
+		color:$gray;
+		@extend %para-meduim;
+
+	}
+
+
+}
+
+

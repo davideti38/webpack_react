@@ -1,0 +1,31 @@
+/* ==|====================
+   Module/headlines
+
+   Ici on  applique les styte de base qui est réutilisable via
+   un extends.
+   ensuite si l'ont à besion de créer un style spécifique on
+   ajoute seulement un modifieur qui prend la class de base +
+   les styles qui sont en plus mais sans avoir à supprimer de styles.
+   -- dans cette exemple on applique une marge différente.
+   ======================= */
+
+
+
+// Buttons hdl__type--color
+
+.hdl {
+
+
+	@include e(large)  {
+
+		color:$black;
+		@extend %hdln-large;
+	}
+
+	@include e(meduim)  {
+
+		color:$gray;
+		@extend %hdln-meduim;
+	}
+
+}

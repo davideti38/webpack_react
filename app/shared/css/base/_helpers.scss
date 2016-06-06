@@ -1,0 +1,92 @@
+/* ===========================
+   helpers
+   =========================== */
+
+// Clearfix
+
+%clearfix {
+	&:after {
+		content :"";
+		display : table;
+		clear   : both;
+	}
+}
+
+// hidden
+
+.hidden{
+	display: none !important;
+}
+
+.fadeOut{
+	opacity:0 !important;
+}
+
+// link
+
+.hidden-btn{
+	display: none;
+
+}
+
+// Screen reader text
+
+.srt {
+	border   : 0;
+	clip     : rect(0 0 0 0);
+	height   : 1px;
+	margin   : -1px;
+	overflow :  hidden;
+	padding  : 0;
+	position : absolute;
+	width    : 1px;
+}
+
+.paused{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+    opacity: 1;
+
+}
+
+// text alignment
+
+.center-align {
+	text-align : center !important;
+}
+
+.left-align {
+	text-align : left !important;
+}
+
+.right-align {
+	text-align : right !important;
+}
+
+// For pseudo-elements
+
+%pseudos {
+	display  : block;
+	content  : '';
+	position : absolute;
+}
+
+// Center elements
+
+.center {
+	display: block !important;
+	margin: 0 auto;
+}
+
+// center-inline
+
+.center-inline{
+	text-align: center;
+}
+
+
+.uppercase{
+	text-transform: uppercase;
+}

@@ -1,0 +1,26 @@
+/* ===========================
+   config : Global config
+   =========================== */
+
+
+// // proximanova
+
+@include font-face("proximanova-black", "../fonts/proxima/proximanova-black-webfont");
+@include font-face("proximanova-bold", "../fonts/proxima/proximanova-bold-webfont");
+@include font-face("proximanova-regular", "../fonts/proxima/proximanova-regular", $file-formats: ttf);
+@include font-face("proximanova-light", "../fonts/proxima/proximanova-light-webfont");
+
+$font-family--black	: "proximanova-black" , Helvetica, Arial, sans-serif;
+$font-family--bold	: "proximanova-bold" , Helvetica, Arial, sans-serif;
+$font-family--regular : "proximanova-regular" , Helvetica, Arial, sans-serif;
+$font-family--light	: "proximanova-light" , Helvetica, Arial, sans-serif;
+
+
+
+$font-weight--light		: 300;
+$font-weight--medium	: 400;
+$font-weight--bold		: 700;
+$font-weight--x-bold	: 800;
+$font-weight--xx-bold	: 900;
+
+

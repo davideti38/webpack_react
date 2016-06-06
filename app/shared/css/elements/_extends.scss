@@ -1,0 +1,48 @@
+/* ===========================
+   extends -- Placeholder rules
+   Des règles de base qui s'appliquent à une catégorie d'élément
+   ex: titre, paragrphe, a etc.
+   ensuite il suffie de d'utiliser extends sur la classe
+   de l'élément.
+   si l'ont doit ajouter à l'élément ou ajoute un modifieur mais
+   on ne doit pas avoir à annuler des règles.
+   =========================== */
+
+
+// Headlines
+
+%hdln-large {
+	font-family: $font-family--bold;
+	font-size: 14px;
+}
+
+
+%hdln-meduim {
+	font-family: $font-family--regular;
+	font-size: 14px;
+}
+
+
+// paragraph
+
+
+%para-meduim {
+	font-family: $font-family--regular;
+	font-size: 14px;
+}
+
+
+// label
+
+%labels{
+	width: 140px;
+	height: 50px;
+	text-align: center;
+	margin:0 auto;
+	font-family: $font-family--regular;
+	font-size: 14px;
+	line-height: 50px;
+}
+
+
+

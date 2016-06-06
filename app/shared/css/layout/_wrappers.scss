@@ -1,0 +1,18 @@
+/* ======================
+   Layout/wrappers
+   ======================= */
+
+
+
+.wrapper{
+
+// Multi pages wrappers
+
+	@include e(tabEmails) {
+
+		width: 50%;
+		margin: 0 auto;
+
+	}
+
+}
